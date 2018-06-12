@@ -1,0 +1,1375 @@
+{
+  "core": {
+    "loaded": "je nacten a",
+    "enabled": "zapnuto",
+    "disabled": "vypnuto",
+    "usage": "Pouziti",
+    "lang-selected": "Bot je nyni prepnuty do cestiny",
+    "command-parse": "Promin, $sender, ale tento prikaz neni spravne, pouzij",
+    "error": "Promin, $sender, ale neco se pokazilo!",
+    "no-response": "",
+    "no-response-bool": {
+      "true": "",
+      "false": ""
+    },
+    "api": {
+      "error": "$sender, neco se pokazilo v API!",
+      "not-available": "nedostupne"
+    },
+    "mute": {
+      "true": "Mute zapnut. Bot nebude posilat zpravy.",
+      "false": "Mute vypnut. Bot bude posilat zpravy."
+    },
+    "theme": "",
+    "percentage": {
+      "true": "", "false": ""
+    },
+    "settings": {
+      "uptime-format": "Format pro uptime nastaven na $value",
+      "atUsername": {
+        "true": "Uzivatelske jmena budou zobrazena s @ takto @foo",
+        "false": "Uzivatelske jmena budou zobrazena bez @ takto foo"
+      },
+      "sendWithMe": {
+        "true": "Bot bude posilat zpravy pomoci /me",
+        "false": "Bot nebude posilat zpravy pomoci /me"
+      },
+      "songs": {
+        "notify": {
+          "true": "Oznamovani prave prehravaneho songu je {core.enabled}",
+          "false": "Oznamovani prave prehravaneho songu je {core.disabled}"
+        },
+        "songrequest": {
+          "true": "Prehravani song requestu je {core.enabled}",
+          "false": "Prehravani song requestu je {core.disabled}"
+        },
+        "playlist": {
+          "true": "Prehravani playlistu je {core.enabled}",
+          "false": "Prehravani playlistu je {core.disabled}"
+        },
+        "volume": "Hlasitost nastavena na $value%",
+        "duration": "Maximalni delka pisne nastavena na $value minut.",
+        "shuffle": {
+          "true": "Pisnicky budou hrat nahodne",
+          "false": "Pisnicky budou hrat podle casu pridani"
+        }
+      },
+      "moderation": {
+        "moderationAnnounceTimeouts": {
+          "true": "Bot bude posilat timeout zpravy do chatu",
+          "false": "Bot nebude posilat timeout zpravy do chatu"
+        },
+        "moderationLinks": {
+          "text": "Moderovani linku je",
+          "true": "{core.settings.moderation.moderationLinks.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationLinks.text} {core.disabled}"
+        },
+        "moderationLinksWithSpaces": {
+          "text": "Moderovani linku s mezerama je",
+          "true": "{core.settings.moderation.moderationLinksWithSpaces.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationLinksWithSpaces.text} {core.disabled}"
+        },
+        "moderationLinksSubs": {
+          "text": "Moderovani linku pro subscribery je",
+          "true": "{core.settings.moderation.moderationLinksSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationLinksSubs.text} {core.disabled}"
+        },
+        "moderationLinksClips": {
+          "text": "Moderovani odkazu na klipy je",
+          "true": "{core.settings.moderation.moderationLinksClips.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationLinksClips.text} {core.disabled}"
+        },
+        "moderationLinksTimeout": "Timeout pri pouziti linku je nastaven na $values",
+        "moderationSymbols": {
+          "text": "Moderovani symbolu je",
+          "true": "{core.settings.moderation.moderationSymbols.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationSymbols.text} {core.disabled}"
+        },
+        "moderationSymbolsSubs": {
+          "text": "Moderovani symbolu pro subscribery je",
+          "true": "{core.settings.moderation.moderationSymbolsSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationSymbolsSubs.text} {core.disabled}"
+        },
+        "moderationSymbolsTimeout": "Timeout pri pouziti symbolu je nastaven na $values",
+        "moderationSymbolsTriggerLength": "Moderovani symbolu zapnuto od $value poctu znaku",
+        "moderationSymbolsMaxConsecutively": "Maximum symbolu zapsanych za sebou je nastaveno na $value",
+        "moderationSymbolsMaxPercent": "Maximum symbolu v cele zprave je nastaveno na $value%",
+        "moderationLongMessage": {
+          "text": "Moderovani dlouhych zprav je",
+          "true": "{core.settings.moderation.moderationLongMessage.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationLongMessage.text} {core.disabled}"
+        },
+        "moderationLongMessageSubs": {
+          "text": "Moderovani dlouhych zprav pro subscribery je",
+          "true": "{core.settings.moderation.moderationLongMessageSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationLongMessageSubs.text} {core.disabled}"
+        },
+        "moderationLongMessageTimeout": "Timeout pro dlouhe zpravy je nastaven na  $values",
+        "moderationLongMessageTriggerLength": "Moderovani dlouhych zprav zapnuto od $value poctu znaku",
+        "moderationCaps": {
+          "text": "Moderovani velkych pismen je",
+          "true": "{core.settings.moderation.moderationCaps.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationCaps.text} {core.disabled}"
+        },
+        "moderationCapsSubs": {
+          "text": "Moderovani velkych pismen pro subscribery je",
+          "true": "{core.settings.moderation.moderationCapsSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationCapsSubs.text} {core.disabled}"
+        },
+        "moderationCapsTimeout": "Timeout pri pouziti celkych pismen je nastaven na $values",
+        "moderationCapsTriggerLength": "Moderovani velkych pismen zapnuto od $value poctu znaku",
+        "moderationCapsMaxPercent": "Maximum velkych pismen v cele zprave je nastaveno na $value%",
+        "moderationColor": {
+          "text": "Moderovani pouziti barev (/me) je",
+          "true": "{core.settings.moderation.moderationColor.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationColor.text} {core.disabled}"
+        },
+        "moderationColorSubs": {
+          "text": "Moderovani pouziti barev (/me) pro subscribery je",
+          "true": "{core.settings.moderation.moderationColorSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationColorSubs.text} {core.disabled}"
+        },
+        "moderationColorTimeout": "Timeout pri pouziti barev (/me) je nastaven na $values",
+        "moderationSpam": {
+          "text": "Moderovani spamu je",
+          "true": "{core.settings.moderation.moderationSpam.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationSpam.text} {core.disabled}"
+        },
+        "moderationSpamSubs": {
+          "text": "Moderovani spamu pro subscribery je",
+          "true": "{core.settings.moderation.moderationSpamSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationSpamSubs.text} {core.disabled}"
+        },
+        "moderationSpamTimeout": "Timeout pri spamovani je nastaven na $values",
+        "moderationSpamTriggerLength": "Moderovani spamu zapnuto od $value poctu znaku",
+        "moderationSpamMaxLength": "Maximalni delka spamu je nastavena na $value",
+        "moderationEmotes": {
+          "text": "Moderovani smajliku je",
+          "true": "{core.settings.moderation.moderationEmotes.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationEmotes.text} {core.disabled}"
+        },
+        "moderationEmotesSubs": {
+          "text": "Moderovani smajliku pro subscribery je",
+          "true": "{core.settings.moderation.moderationEmotesSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationEmotesSubs.text} {core.disabled}"
+        },
+        "moderationEmotesTimeout": "Timeout pri spamovani smajliku je nastaven na $values",
+        "moderationEmotesMaxCount": "Maximalni pocet smajliky ku ve jedne zprave je nastaveno na $value",
+        "moderationBlacklistTimeout": "Timeout pri pouzivani zakazanych slov je nastaven na $values",
+        "moderationBlacklistSubs": {
+          "text": "Moderovani blacklistu pro subscribery je",
+          "true": "{core.settings.moderation.moderationBlacklistSubs.text} {core.enabled}",
+          "false": "{core.settings.moderation.moderationBlacklistSubs.text} {core.disabled}"
+        },
+        "moderationWarnings": "Uzivatel bude $valuex varovan, nez dostane timeout",
+        "moderationWarningsTimeouts": {
+          "true": "Varovanim pro uzivatele bude 1s timeout",
+          "false": "Varovanim pro uzivatele bude pouze zprava v chatu"
+        }
+      }
+    },
+    "years": "rok|4:roky|roku",
+    "months": "mesic|4:mesice|mesicu",
+    "days": "den|4:dny|dnu",
+    "hours": "hodina|4:hodiny|hodin",
+    "minutes": "minuta|4:minuty|minut",
+    "messages": "zprava|4:zpravy|zprav",
+    "links": "odkaz|4:odkazy|odkazu",
+    "isRegistered": "$sender, nelze pouzit $keyword, protoze je uz prirazena k jine akci!"
+  },
+  "uptime": {
+    "online": "Stream je online (if $days>0|$daysd )(if $hours>0|$hoursh )(if $minutes>0|$minutesm )(if $seconds>0|$secondss)",
+    "offline": "Stream je offline (if $days>0|$daysd )(if $hours>0|$hoursh )(if $minutes>0|$minutesm )(if $seconds>0|$secondss)"
+  },
+  "overlay": {
+    "emotes": {
+      "settings": {
+        "OEmotesSize": "Velikost emotikonu je nastavena na $value",
+        "OEmotesMax": "Maximalni pocet zobrazeni stejnych emotikonu na zpravu je $value",
+        "OEmotesAnimation": "Animace zobrazeni emotikonu je $value",
+        "OEmotesAnimationTime": "Doba trvani animace nastavena na $valuems"
+      }
+    }
+  },
+  "webpanel": {
+    "display-as": "Zobrazit jako",
+    "set-default": "Výchozí nastavení",
+    "add": "Přidat",
+    "placeholders": {
+      "text-url-generator": "Vložte text nebo html pro vytvoření base64 níže a URL výše",
+      "text-decode-base64": "Vložte base64 a vygenerujte URL a text výše",
+      "creditsSpeed": "Nastavte rychlost titulek, nižší = rychlejší"
+    },
+    "custom-variables": {
+      "set-your-variables-to-watch-here": "Zde nastavte proměnné",
+      "type": "typ",
+      "unwatch": "Nesledovat",
+      "watch": "Sledovat",
+      "options": "možnosti",
+      "number": "číslo",
+      "text": "text",
+      "options-placeholder": "možnost1, možnost2, možnost3, zde je možnost 4",
+      "no-options-set": "Vaše možnosti jste ještě nenastavili"
+    },
+    "timers": {
+      "title": "Časovače",
+      "timer": "Časovač",
+      "messages": "zprávy",
+      "seconds": "vteřiny",
+      "badges": {
+        "enabled": "Zapnuto",
+        "disabled": "Vypnuto"
+      },
+      "errors": {
+        "timer_name_must_be_compliant": "Tato hodnota může obsahovat jen tyto znaky a-zA-Z09_",
+        "this_value_must_be_a_positive_number_or_0": "Tato hodnota musí být kladné číslo nebo 0",
+        "value_cannot_be_empty": "Hodnota nemůže být prázdná"
+      },
+      "dialog": {
+        "timer": "Časovač",
+        "name": "Název",
+        "interval": "Interval",
+        "responses": "Odpovědi",
+        "messages": "každých x zpráv",
+        "seconds": "každých x vteřin",
+        "title": {
+          "new": "Nový časovač",
+          "edit": "Upravit časovač"
+        },
+        "placeholders": {
+          "name": "Nastavte jméno časovače, může obsahovat pouze tyto znaky a-zA-Z0-9_ (pokud je prázdné, jméno se vygeneruje)",
+          "messages": "Spustit každých x zpráv",
+          "seconds": "Spustit každých x vteřin"
+        },
+        "alerts": {
+          "success": "Časovač byl <strong>úspěšně</strong> uložen.",
+          "fail": "Něco se <strong>pokazilo</strong>."
+        }
+      },
+      "buttons": {
+        "close": "Zavřít",
+        "save-changes": "Uložit změny",
+        "disable": "Vypnout",
+        "enable": "Zapnout",
+        "edit": "Upravit",
+        "delete": "Smazat",
+        "yes": "Ano",
+        "no": "Ne"
+      },
+      "popovers": {
+        "are_you_sure_you_want_to_delete_timer": "Opravdu chcete <strong class='text-danger'>smazat</strong> časovač"
+      }
+    },
+    "events": {
+      "event": "Událost",
+      "whatsthis": "Co je to?",
+      "badges": {
+        "enabled": "Zapnuto",
+        "disabled": "Vypnuto"
+      },
+      "buttons": {
+        "test": "Test",
+        "enable": "Zapnout",
+        "disable": "Vypnout",
+        "edit": "Upravit",
+        "delete": "Smazat",
+        "yes": "Ano",
+        "no": "Ne"
+      },
+      "popovers": {
+        "are_you_sure_you_want_to_delete_event": "Opravdu chcete <strong class='text-danger'>smazat</strong> událost",
+        "example_of_user_object_data": "Příklad dat v objektu uživatele"
+      },
+      "errors": {
+        "command_must_start_with_!": "Příkaz musí začít !",
+        "this_value_must_be_a_positive_number_or_0": "Tato hodnota musí být kladné číslo nebo 0",
+        "value_cannot_be_empty": "Hodnota nemůže být prázdná"
+      },
+      "dialog": {
+        "title": {
+          "new": "Nová událost",
+          "edit": "Upravit událost"
+        },
+        "placeholders": {
+          "name": "Nastavte jméno události (pokud je prázdné, jméno se vygeneruje)"
+        },
+        "alerts": {
+          "success": "Událost byla <strong>úspěšně</strong> uložena.",
+          "fail": "Něco se <strong>pokazilo</strong>."
+        },
+        "close": "Zavřít",
+        "save-changes": "Uložit změny",
+        "event": "Událost",
+        "name": "Název",
+        "usable-events-variables": "Použitelné proměnné události",
+        "settings": "Nastavení",
+        "filters": "Filtry",
+        "operations": "Operace"
+      },
+      "definitions": {
+        "fadeOutXCommands": {
+          "label": "Odečíst X příkazů",
+          "placeholder": "Počet příkazů, odečtených během fade out intervalu"
+        },
+        "fadeOutXKeywords": {
+          "label": "Odečíst X klíčových slov",
+          "placeholder": "Počet klíčových slov, odečtených během fade out intervalu"
+        },
+        "fadeOutInterval": {
+          "label": "Interval odečítání (sekundy)",
+          "placeholder": "Fade out interval odečítání"
+        },
+        "runEveryXCommands": {
+          "label": "Spustit každých X příkazů",
+          "placeholder": "Počet příkazů před spuštěním události"
+        },
+        "runEveryXKeywords": {
+          "label": "Spustit každých X klíčových slov",
+          "placeholder": "Počet klíčových slov před spuštěním události"
+        },
+        "keywordToWatch": {
+          "label": "Sledovat toto klíčové slovo",
+          "placeholder": "Nastav klicoveSlovo"
+        },
+        "commandToWatch": {
+          "label": "Sledovat tento příkaz",
+          "placeholder": "Nastav !prikazKeSledovani"
+        },
+        "viewersAtLeast": {
+          "label": "Nejméně diváků",
+          "placeholder": "Kolik diváků spustí událost"
+        },
+        "ignoreAutohost": {
+          "label": "Ignorovat Autohost",
+          "true": "Ignorovat",
+          "false": "Neignorovat"
+        },
+        "runInterval": {
+          "label": "Interval spuštění (0 = spustit jednou za stream)",
+          "placeholder": "Spustit událost každých x sekund"
+        },
+        "runAfterXMinutes": {
+          "label": "Spustit po x minutách",
+          "placeholder": "Spustit událost po x minutách"
+        },
+        "runEveryXMinutes": {
+          "label": "Spustit každých x minut",
+          "placeholder": "Spustit událost každých x minut"
+        },
+        "messageToSend": {
+          "label": "Poslat zprávu",
+          "placeholder": "Nastav svou zprávu"
+        },
+        "commandToRun": {
+          "label": "Příkaz ke spuštění",
+          "placeholder": "Nastav si !prikazKeSpusteni"
+        },
+        "isCommandQuiet": {
+          "label": "Měl by být příkaz potichu",
+          "true": "Příkaz bude potichu",
+          "false": "Příkaz nebude potichu"
+        },
+        "urlOfSoundFile": {
+          "label": "Adresa URL vašeho zvukového souboru",
+          "placeholder": "http://www.cesta.url/kde/je/soubor.mp3"
+        },
+        "emotesToExplode": {
+          "label": "Emotes k výbuchu",
+          "placeholder": "Seznam emotes k výbuchu, např. Kappa PurpleHeart"
+        },
+        "announce": {
+          "label": "Oznámit v chatu",
+          "true": "Bude oznámeno",
+          "false": "Nebude oznámeno"
+        },
+        "hasDelay": {
+          "label": "Klip bude mít delay (aby se přiblížil divákovi)",
+          "true": "Bude mít delay",
+          "false": "Nebude mít delay"
+        },
+        "durationOfCommercial": {
+          "label": "Doba trvání reklamy",
+          "placeholder": "Dostupné trvání - 30, 60, 90, 120, 150, 180"
+        },
+        "customVariable": {
+          "label": "$_",
+          "placeholder": "Vlastní proměnná, kterou chcete aktualizovat"
+        },
+        "numberToIncrement": {
+          "label": "Kolik přičíst",
+          "placeholder": ""
+        },
+        "numberToDecrement": {
+          "label": "Kolik odečíst",
+          "placeholder": ""
+        }
+      }
+    },
+    "eventlist-events": {
+      "follow": "ti dal <strong>follow</strong>",
+      "host": "tě <strong>hostuje</strong> s $viewers diváky",
+      "raid": "tě <strong>raiduje</strong> s $viewers diváky",
+      "sub": "ti dal <strong>sub</strong>",
+      "subgift": "byl <strong>darován</strong> sub od $username",
+      "resub": "ti dal <strong>resub</strong> $months měsíců",
+      "cheer": "ti dal <strong>cheer</strong> $bits bitů",
+      "tip": "ti dal <strong>tip</strong> $formatted_amount"
+    },
+    "responses": {
+      "variable": {
+        "sender": "Uživatel, který inicioval",
+        "title": "Aktuální název",
+        "game": "Aktuální hra",
+        "viewers": "Aktuální počet diváků",
+        "views": "Aktuální počet zobrazení",
+        "hosts": "Aktuální počet hostů",
+        "followers": "Aktuální počet followerů",
+        "subscribers": "Aktuální počet subscriberů",
+        "arg": "Argument",
+        "param": "Parametr (nutny)",
+        "!param": "Parametr (neni nutny)",
+        "alias": "Alias",
+        "command": "Příkazy",
+        "keyword": "Klíčové slovo",
+        "response": "Odpověď",
+        "list": "Zaplněný seznam",
+        "type": "Typ",
+        "days": "Dny",
+        "hours": "Hodiny",
+        "minutesName": "Skloňování slova minuta (1 minuta, 2 minuty)",
+        "minutes": "Minuty",
+        "seconds": "Sekundy",
+        "description": "Popisek",
+        "quiet": "Potichu (bool)",
+        "id": "ID",
+        "name": "Název",
+        "messages": "Zprávy",
+        "amount": "Počet",
+        "currency": "Měna",
+        "pointsName": "Název bodů",
+        "points": "Body",
+        "rank": "Rank",
+        "nextrank": "Další rank",
+        "username": "Uživatelské jméno",
+        "value": "Hodnota",
+        "variable": "Proměnná",
+        "count": "Počet",
+        "link": "Link (přeloženo)",
+        "winner": "Vítěz",
+        "challenger": "Vyzyvatel",
+        "min": "Minimum",
+        "max": "Maximum",
+        "eligibility": "Způsobilost",
+        "probability": "Pravděpodobnost",
+        "time": "Čas",
+        "options": "Volby",
+        "option": "Volba",
+        "when": "Kdy",
+        "diff": "Rozdíl",
+        "users": "Uživatelé",
+        "user": "Uživatel",
+        "bank": "Banka",
+        "nextBank": "Další banka",
+        "cooldown": "Cooldown",
+        "tickets": "Tikety",
+        "ticketsName": "Název ticketů",
+        "fromUsername": "Od uživatele",
+        "toUsername": "K uživateli",
+        "items": "Položky",
+        "bits": "Bity",
+        "message": "Zpráva",
+        "reason": "Důvod",
+        "target": "Cíl",
+        "autohost": "Autohost (true/false)",
+        "duration": "Doba trvání",
+        "method": "Metoda",
+        "months": "Počet měsíců",
+        "monthsName": "Název měsíce (1 měsíc, 2 měsíce)",
+        "oldGame": "Hra před změnou",
+        "userObject": "Úplný uživatelský objekt",
+        "recipientObject": "Úplný objekt příjemce",
+        "recipient": "Příjemce",
+        "currentSong": "Aktuální píseň",
+        "latestFollower": "Poslední Follower",
+        "latestSubscriber": "Poslední Subscriber",
+        "latestTipAmount": "Poslední Tip (počet)",
+        "latestTipCurrency": "Poslední Tip (měna)",
+        "latestTipMessage": "Poslední Tip (zpráva)",
+        "latestTip": "Poslední Tip (uživatel)",
+        "latestCheerAmount": "Poslední Cheer (počet)",
+        "latestCheerMessage": "Poslední Cheer (zpráva)",
+        "latestCheer": "Poslední Cheer (uživatel)"
+      }
+    },
+    "page-settings": {
+      "systems": {
+        "others": {
+          "title": "Ostatní",
+          "currency": "Měna"
+        },
+        "whispers": {
+          "title": "Šeptání",
+          "toggle": {
+            "listener": "Poslouchat příkazy šeptem",
+            "settings": "Šeptat změny nastavení",
+            "raffle": "Šeptat při zapojení do raffle",
+            "permissions": "Šeptat, když má uživatel nedostatečná oprávnění",
+            "cooldowns": "Šeptat při cooldownu (pokud nastaven jako oznámit)"
+          }
+        }
+      },
+      "overlays": {
+        "credits": {
+          "period": {
+            "day": "den",
+            "week": "týden",
+            "month": "měsíc",
+            "all": "bez omezení"
+          }
+        },
+        "replay": {
+          "title": "Nastavení replaye",
+          "position": "Pozice",
+          "posleft": "Vlevo",
+          "posright": "Vpravo",
+          "offsetX": "Horizontální posun",
+          "offsetY": "Vertikální posun",
+          "size": "Velikost videa",
+          "volume": "Hlasitost",
+          "label": "Ukazát 'replay' popisek",
+          "filter": {
+            "title": "Filter replaye",
+            "none": "- žádný -",
+            "grayscale": "grayscale",
+            "sepia": "sepia",
+            "tint": "tint",
+            "washed": "vybledlé barvy"
+          }
+        }
+      }
+    },
+    "page-logger": {
+      "buttons": {
+        "messages": "Zprávy",
+        "follows": "Followy",
+        "subs": "Odběratelé",
+        "cheers": "Cheery",
+        "responses": "Odpovědi bota",
+        "whispers": "Šeptání",
+        "hosts": "Hostování",
+        "bans": "Bany",
+        "timeouts": "Timeouty"
+      },
+      "range": {
+        "day": "den",
+        "week": "týden",
+        "month": "měsíc",
+        "year": "rok",
+        "all": "bez omezení"
+      },
+      "order": {
+        "asc": "Vzestupně",
+        "desc": "Sestupně"
+      },
+      "labels": {
+        "order": "SEŘADIT",
+        "range": "ROZSAH",
+        "filters": "FILTRY"
+      }
+    },
+    "stats-panel": {
+      "show": "Ukázat statistiky",
+      "hide": "Skrýt statistiky"
+    },
+    "permissions_list": {
+      "0": "owner",
+      "1": "viewer",
+      "2": "mod",
+      "3": "regular"
+    },
+    "translations": "Vlastní překlad",
+    "bot-responses": "Odpovědi bota",
+    "duration": "Trvání",
+    "viewers-reset-attributes": "Vymazat data",
+    "viewers-points-of-all-users": "Body všech uživatelů",
+    "viewers-watchtime-of-all-users": "Čas sledování všech uživatelů",
+    "viewers-messages-of-all-users": "Zprávy všech uživatelů",
+    "events-game-after-change": "hra po změně",
+    "events-game-before-change": "hra před změnou",
+    "events-user-triggered-event": "uživatel, který spustil event",
+    "events-method-used-to-subscribe": "metoda použita pro subscribe",
+    "events-months-of-subscription": "počet měsíců",
+    "events-monthsName-of-subscription": "skloňované slovo 'měsíc' (1 měsíc, 2 měsíce)",
+    "events-user-message": "zpráva uživatele",
+    "events-bits-user-sent": "počet poslaných bitů",
+    "events-reason-for-ban-timeout": "důvod pro ban/timeout",
+    "events-duration-of-timeout": "doba trvání timeoutu",
+    "events-duration-of-commercial": "doba trvání reklamy",
+    "events-target-of-your-hosting": "koho hostuješ",
+    "events-viewers-of-hosting": "diváků při hostingu",
+    "overlays-eventlist-resub": "resub",
+    "overlays-eventlist-subgift": "subgift",
+    "overlays-eventlist-host": "host",
+    "overlays-eventlist-sub": "sub",
+    "overlays-eventlist-follow": "follow",
+    "overlays-eventlist-cheer": "bits",
+    "overlays-eventlist-tip": "tip",
+    "overlay-credits-aggregate": "Spojit eventy",
+    "overlay-credits-show-followers": "Zobrazit followery",
+    "overlay-credits-show-hosts": "Zobrazit hosty",
+    "overlay-credits-show-subscribers": "Zobrazit subscribery",
+    "overlay-credits-show-subgifts": "Zobrazit subgifty",
+    "overlay-credits-show-resubs": "Zobrazit resuby",
+    "overlay-credits-show-cheers": "Zobrazit cheery",
+    "overlay-credits-show-clips": "Zobrazit klipy",
+    "overlay-credits-show-tips": "Zobrazit tipy",
+    "overlay-credits-speed": "Rychlost titulek",
+    "overlay-credits-max-font-size": "Max velikost fontu titulku",
+    "overlay-credits-last-message": "Poslední zpráva",
+    "overlay-credits-last-submessage": "Poslední podzpráva",
+    "overlay-credits-stream-by": "Streamoval",
+    "overlay-credits-followed-by": "Follow od",
+    "overlay-credits-hosted-by": "Hostování",
+    "overlay-credits-cheer-by": "Cheer od",
+    "overlay-credits-subscribed-by": "Subscribe od",
+    "overlay-credits-resubscribed-by": "Resubscribe od",
+    "overlay-credits-subgift-by": "Subgift od",
+    "overlay-credits-clipped-by": "Klip od",
+    "overlay-credits-tip-by": "Tip od",
+    "overlay-credits-social-facebook": "Facebook",
+    "overlay-credits-social-twitter": "Twitter",
+    "overlay-credits-social-twitch": "Twitch",
+    "overlay-credits-clips-period": "Klipy za období",
+    "overlay-credits-clips-count": "Počet klipů",
+    "overlay-credits-clips-play": "Bude klipy přehrávány",
+    "overlay-credits-top-clips": "Top klipy",
+    "credits": "Titulky",
+    "requested-by": "Požadoval",
+    "description": "Popisek",
+    "raffle-type": "Typ raffle",
+    "raffle-type-keywords": "Pouze keyword",
+    "raffle-type-tickets": "S tickety",
+    "raffle-tickets-range": "Rozsah ticketu",
+    "video_id": "ID Videa",
+    "highlights": "Highlighty",
+    "cooldown-quiet-header": "Zobrazí cooldown zprávu",
+    "cooldown-quiet-toggle-no": "Upozornit",
+    "cooldown-quiet-toggle-yes": "Neupozornit",
+    "cooldown-moderators": "Moderátoři",
+    "cooldown-owners": "Vlastník bota",
+    "show-usernames-with-at": "Zobrazit uživatelské jména s @",
+    "twitter-send-message": "Tweet",
+    "send-message-as-a-bot": "Poslat zprávu jako bot",
+    "chat-as-bot": "Chat (jako bot)",
+    "product": "Produkt",
+    "optional": "nepovinný",
+    "placeholder-search": "Hledat",
+    "placeholder-enter-product": "Vložte produkt",
+    "placeholder-enter-keyword": "Vložte klíčové slovo",
+    "overlay-emotes-size": "Velikost emotikonu",
+    "overlay-emotes-max": "Max stejných emotikonů na zprávu",
+    "overlay-emotes-animation": "Animace emotikonu",
+    "overlay-emotes-animation-time": "Trvání animace",
+    "overlay-carousel-upload": "Nahrát obrázek",
+    "overlay-text-link-generator": "URL generátor",
+    "overlay-text-decode-base64": "Dekódovat base64",
+    "fade-out-top": "slábnout směrem nahoru",
+    "fade-out-zoom": "slábnout přiblížením",
+    "moderation-subscribers-toggle": "Postihovat i subscribery",
+    "moderation-clips-toggle": "Postihovat i clipy",
+    "moderation-spaces-toggle": "Zahrnout linky s mezerou",
+    "global": "Globální",
+    "user": "Divák",
+    "alerts": "Alerty",
+    "eventlist": "EventList",
+    "dashboard": "Dashboard",
+    "carousel": "Obrázky",
+    "text": "Text",
+    "manage": "Správa",
+    "registry": "Registr",
+    "integrations": "Integrace",
+    "ignorelist": "Ignore list",
+    "settings": "Nastavení",
+    "permissions": "Oprávnění",
+    "permission": "Oprávnění",
+    "stats": "Statistiky",
+    "viewers": "Diváci",
+    "systems": "Moduly",
+    "overlays": "Overlaye",
+    "gallery": "Galerie médií",
+    "aliases": "Aliasy",
+    "alias": "Alias",
+    "command": "Příkaz",
+    "clips": "Klipy",
+    "cooldowns": "Cooldowny",
+    "custom-commands": "Vlastní příkazy",
+    "keywords": "Klíčová slova",
+    "keyword": "Klíčové slovo",
+    "moderation": "Pravidla chatu",
+    "timer": "Časovač",
+    "price": "Cena příkazů",
+    "ranks": "Hodnosti",
+    "rank": "Hodnost",
+    "event-listeners": "Události",
+    "logger": "Záznamy",
+    "songs": "Písničky",
+    "previous": "Předchozí",
+    "next": "Další",
+    "or": "- NEBO -",
+    "close": "Zavřít",
+    "save-changes": "Uložit změny",
+    "saving": "Ukládám...",
+    "deleting": "Mazání...",
+    "done": "Hotovo",
+    "error": "Chyba",
+    "custom-title-empty-error": "Vlastní nadpis je zaškrtnut, ale pole je prázdné!",
+    "title": "Název",
+    "change-title": "Změnit název",
+    "game": "Hra",
+    "change-game": "Změnit hru",
+    "click-to-change": "kliknutím změňte",
+    "uptime": "uptime",
+    "not-available": "Není k dispozici",
+    "max-viewers": "Nejvíce diváků",
+    "new-chatters": "Nových diváků",
+    "chat-messages": "Zpráv v chatu",
+    "views": "Shlédnutí",
+    "hosts": "Hostování",
+    "followers": "Followeři",
+    "subscribers": "Subscribeři",
+    "bits": "Bity",
+    "tips": "Spropitné",
+    "tier": "Tier",
+    "status": "status",
+    "mute": "ztišit",
+    "add-widget": "Přidat widget",
+    "remove-widget": "Smazat widget",
+    "for": "pro",
+    "close-bet-after": "Uzavřít sázku za",
+    "gain-every-option": "Zisk s každou položkou",
+    "reuse-bet": "opětovně použij",
+    "refund": "refundovat",
+    "open-queue": "Otevřít frontu",
+    "close-queue": "Zavřít frontu",
+    "number-of-users": "Počet diváků",
+    "roll-again": "Losuj znovu",
+    "follower": "Follower",
+    "minutes": "minuty",
+    "seconds": "vteřiny",
+    "hours": "hodiny",
+    "eligible-to-enter": "Oprávněni se zúčastnit:",
+    "followers-only": "Pouze followeři",
+    "subscribers-only": "Pouze subscribeři",
+    "everyone": "Všichni",
+    "roll-a-winner": "Losovat vítěze",
+    "send-message": "Poslat zprávu",
+    "messages": "Zprávy",
+    "announce-every": "Oznámit každých",
+    "create": "Vytvořit",
+    "cooldown": "Cooldown",
+    "confirm": "Potvrdit",
+    "delete": "Smazat",
+    "enabled": "Zapnuto",
+    "disabled": "Vypnuto",
+    "enable": "Zapnout",
+    "disable": "Vypnout",
+    "slug": "Slug",
+    "stream-title": "Název streamu",
+    "posted-by": "Vložil",
+    "time": "Čas",
+    "type": "Typ",
+    "response": "Odpověď",
+    "num-of-responses": "# Odpovědí",
+    "cost": "Cena",
+    "name": "Název",
+    "playlist": "Playlist",
+    "public-link": "Veřejný odkaz",
+    "banned-songs": "Zabanované písničky",
+    "youtube-id": "YouTube ID",
+    "length": "Doba trvání",
+    "volume": "Hlasitost",
+    "start-time": "Čas zahájení",
+    "end-time": "Čas ukončení",
+    "watched-time": "Čas sledování",
+    "followed-since": "Follower od",
+    "subscribed-since": "Subscriber od",
+    "username": "Uživatelské jméno",
+    "last-seen": "Naposledy viděn",
+    "points": "Body",
+    "calendar": "Kalendář",
+    "stream-events": "Stream Eventy",
+    "select-date-from-calendar": "Vyber datum z kalendáře",
+    "select-stream-from-calendar-and-events": "Vyber stream z kalendáře a eventů",
+    "there-is-no-events-on-selected-date": "Nebyl nalezen žádný event ve vybraném datu",
+    "string": "string",
+    "points-name": "Název bodů",
+    "points-single-multi": "j.č.|mn.č.",
+    "points-response": "Odpověď pro body",
+    "points-interval": "Interval bodů",
+    "points-per-interval": "Bodů za interval",
+    "points-interval-offline": "Interval bodů (offline)",
+    "points-per-interval-offline": "Bodů za interval (offline)",
+    "points-per-message": "Bodů za zprávu",
+    "points-per-message-interval": "Přičíst body každých X zpráv",
+    "interval": "Interval",
+    "number": "číslo",
+    "minimal-messages-required": "Minimální počet zpráv",
+    "max-duration": "Maximální délka",
+    "shuffle": "Hrát náhodně",
+    "song-requests": "Song Requests",
+    "song-request": "Song Request",
+    "song-notify": "Notifikace na začátku písně",
+    "format": "Formát",
+    "available": "Dostupné",
+    "links": "Linky",
+    "symbols": "Symboly",
+    "long-messages": "Dlouhé zprávy",
+    "capitals": "Velké písmena",
+    "spam": "Spam",
+    "colors": "Barvy",
+    "emotes": "Smajlíky",
+    "trigger-length-of-message": "Kontrolovat od této délky zprávy",
+    "max-symbols-consecutively": "Maximum symbolů jdoucí po sobě",
+    "max-symbols-percentage": "Maximální % symbolů",
+    "max-capitals-percentage": "Maximální % velkých písmen",
+    "max-spam-length": "Maximální délka spamu",
+    "max-emotes-in-message": "Maximální počet smajlíků",
+    "timeout-duration": "Trvání timeoutu",
+    "timeout-settings": "Nastavení timeoutů",
+    "timeout-blacklist": "Blacklist",
+    "timeout-whitelist": "Whitelist",
+    "one-record-per-line": "jeden záznam na řádek",
+    "warnings-before-user-timeout": "Varování před timeoutem diváka",
+    "warning-should-be-timeout": "Varování je 1s timeout (promaže chat)",
+    "announce-timeouts-in-chat": "Oznámit timeouty v chatu",
+    "on": "zapnuto",
+    "off": "vypnuto",
+    "will-timeout": "timeout",
+    "warning": "varování",
+    "announce": "oznámit",
+    "muted": "neoznámit",
+    "search-by-username": "Vyhledat podle uživ. jm.",
+    "create-and-use-a-new-game": "Vytvoř a použij novou hru",
+    "create-and-use-a-new-title": "Vytvoř a použij nový název",
+    "followers-show-number": "Zobrazit",
+    "followers-show": "followerů",
+    "eventlist-overflow-height": "Maximální výška widgetu",
+    "eventlist-show-number": "Zobrazit",
+    "eventlist-show": "eventů",
+    "subscribers-show": "subscriberů",
+    "followers-size": "Velikost fontu",
+    "followers-message-size": "Velikost fontu zpráv",
+    "custom-message": "Vlastní zpráva",
+    "custom-ban-message": "Vlastní ban zpráva",
+    "custom-ban-message-warning": "Vlastní varování",
+    "title-template": "Šablona nadpisu",
+    "minimal-watched-time": "Minimální čas sledování:",
+    "widget-title-customvariables": "VLASTNÍ PROMĚNNÉ",
+    "widget-title-twitter": "TWITTER",
+    "widget-title-bets": "SÁZKY",
+    "widget-title-chat": "CHAT",
+    "widget-title-clips": "POSLEDNÍ KLIPY",
+    "widget-title-queue": "FRONTA",
+    "widget-title-raffles": "TOMBOLA",
+    "widget-title-soundboard": "SOUNDBOARD",
+    "widget-title-cmdboard": "COMMANDBOARD",
+    "widget-title-monitor": "TWITCH STREAM MONITOR",
+    "widget-title-ytplayer": "PŘEHRÁVAČ HUDBY",
+    "widget-title-latest-followers": "NEJNOVĚJŠÍ FOLLOWEŘI",
+    "widget-title-latest-subscribers": "NEJNOVĚJŠÍ SUBSCRIBEŘI",
+    "widget-title-commercial": "REKLAMY",
+    "widget-title-joinpart": "JOIN/PART LIST",
+    "event": "událost",
+    "operation": "operace",
+    "user-joined-channel": "uživatel se připojil do chatu",
+    "user-parted-channel": "uživatel se odešel z chatu",
+    "follow": "nový follower",
+    "tip": "nový tip",
+    "unfollow": "ztráta followera",
+    "subscription": "nový subscription",
+    "subgift": "nový subgift",
+    "resub": "uživatel resubscribed",
+    "command-send-x-times": "příkaz poslán x-krát",
+    "keyword-send-x-times": "klíčové slovo posláno x-krát",
+    "number-of-viewers-is-at-least-x": "počet diváků je alespoň x",
+    "stream-started": "stream začal",
+    "stream-stopped": "stream skončil",
+    "stream-is-running-x-minutes": "stream trvá x minut",
+    "every-x-minutes-of-stream": "každých x minut streamu",
+    "game-changed": "hra změněna",
+    "cheer": "cheer byl získán",
+    "clearchat": "chat byl vymazán",
+    "action": "uživatel poslal /me",
+    "ban": "uživatel byl zabanován",
+    "hosting": "tvůj channel začal hostovat",
+    "hosted": "tvůj channel je hostován",
+    "raid": "tvůj channel dostal raid",
+    "mod": "uživatel se stal novým modem",
+    "timeout": "uživatel dostal timeout",
+    "create-a-new-event-listener": "Vytvoř nový event listener",
+    "send-twitter-message": "poslat zprávu na twitter",
+    "send-chat-message": "poslat chat zprávu",
+    "send-whisper": "poslat whisper",
+    "run-command": "spusť příkaz",
+    "play-sound": "přehrát zvuk",
+    "count": "počet",
+    "timestamp": "timestamp",
+    "message": "zpráva",
+    "sound": "zvuk",
+    "emote-explosion": "exploze smajlíků",
+    "quiet": "tichý",
+    "true": "ano",
+    "false": "ne",
+    "light": "světlý theme",
+    "dark": "tmavý theme",
+    "gambling": "Gambling",
+    "seppukuTimeout": "Timeout pro !seppuku",
+    "rouletteTimeout": "Timeout pro !roulette",
+    "fightmeTimeout": "Timeout pro !fightme",
+    "duelCooldown": "Cooldown pro !duel",
+    "fightmeCooldown": "Cooldown pro !fightme",
+    "gamblingCooldownBypass": "Ignorovat herní cooldowny pro mody/castera",
+    "click-to-highlight": "highlight",
+    "click-to-toggle-display": "přepnout zobrazení",
+    "commercial": "reklama zahájena",
+    "start-commercial": "spustit reklamu",
+    "bot-will-join-channel": "bot se připojí k kanálu",
+    "bot-will-leave-channel": "bot opustí kanál",
+    "create-a-clip": "vytvořit klip",
+    "create-a-clip-and-play-replay": "vytvořit klip a přehrát (overlay/alerts)",
+    "increment-custom-variable": "přičíst do vlastní proměnné",
+    "decrement-custom-variable": "odečíst z vlastní proměnné",
+    "omit": "vynechat",
+    "comply": "dodržovat",
+    "visible": "viditelné",
+    "hidden": "skryté",
+    "gamblingChanceToWin": "Šance na výhru !gamble",
+    "gamblingMinimalBet": "Minimální sázka pro !gamble",
+    "duelDuration": "Trvání !duel",
+    "duelMinimalBet": "Minimální sázka pro !duel"
+  },
+  "raffles": {
+    "announceInterval": "Otevrene raffle budou oznamovany kazdych $value minut",
+
+    "eligibility-followers-item": "followery",
+    "eligibility-subscribers-item": "subscribery",
+    "eligibility-everyone-item": "vsechny",
+
+    "announce-raffle": "Raffle prave bezi. Pro vstup do raffle napis $keyword. Vstup je mozny pro $eligibility",
+    "announce-ticket-raffle": "Raffle prave bezi. Pro vstup do raffle napis $keyword <$min-$max>. Vstup je mozny pro $eligibility",
+
+    "cannot-create-raffle-without-keyword": "Promin, $sender, ale nemuzes vytvorit raffle bez klicoveho slova",
+    "raffle-is-already-running": "Promin, $sender, ale raffle jiz bezi s keywordem !$keyword",
+    "no-raffle-is-currently-running": "$sender, zadne raffle bez viteze momentalne nebezi",
+
+    "no-participants-to-pick-winner": "$sender, nikdo se nezucastnil teto raffle",
+    "raffle-winner-is": "Vitezem raffle $keyword se stava $username! Pravdepodobnost vyhry byla $probability%!"
+  },
+  "bets": {
+      "running": "$sender, sazky jsou jiz otevreny!  Moznosti sazky: $options. Pouzij !bet close 0-$maxIndex",
+      "notRunning": "Zadne sazky nejsou otevreny, pozadej moda o otevreni!",
+      "opened": "Sazka '$title' otevrena! Moznosti sazky: $options. Pouzij !bet 0-$maxIndex <pocet bodu> a vyhraj! Zbyva pouze $minutesmin pro vsazeni!",
+      "closeNotEnoughOptions": "$sender, pro zavreni sazky musis vybrat viteznou moznost.",
+      "notEnoughOptions": "$sender, nove sazky musi mit alespon dve moznosti!",
+      "info": "Sazka '$title' je stale otevrena! Moznosti sazky: $options. Pouzij !bet 0-$maxIndex <pocet bodu> a vyhraj! Zbyva pouze $minutesmin pro vsazeni!",
+      "parseError": "{core.command-parse} !bet a zjisti jak na to",
+      "diffBet": "$sender, uz sis vsadil na $option a nemuzes vsadit na vice moznosti najednou!",
+      "undefinedBet": "Promin, $sender, ale tato moznost neexistuje, pouzij !bet a zjisti jak na to",
+      "betPercentGain": "Sazky se vyplaci $value% za kazdou moznost",
+      "betCloseTimer": "Sazky budou automaticky uzavreny za $valuemin",
+      "refund": "Sazky byly uzavreny bez vyhry, vsichni uzivatele byly vyplaceni!",
+      "notOption": "$sender, tato moznost neexistuje! Sazka nebyla uzavrena, pouzij !bet",
+      "closed": "Sazky byly uzavreny a vitezna moznost je $option! Vyplaceno bylo $amount uzivatelu!",
+      "timeUpBet": "Prisel si pozde, $sender, cas na sazeni vyprsel!",
+      "locked": "Vyprsel cas na vsazeni! Dalsi sazky neprijimame",
+      "zeroBet": "Ale ale, $sender, nemuzes vsadit 0 $pointsName",
+      "lockedInfo": "Sazka '$title' je stale otevrena, ale cas na vsazeni jiz vyprsel!",
+      "removed": "Vyprsel cas na vsazeni! Nikdo si nevsadil -> automaticky uzaviram",
+      "error": "Promin, $sender, ale prikaz neni v poradku! Pouzij !bet 0-$maxIndex <pocet bodu>. Priklad !bet 0 100 vsadi 100 bodu na polozku 0."
+  },
+  "alias": {
+    "alias-parse-failed": "{core.command-parse} !alias",
+    "alias-was-not-found": "$sender, alias !$alias nebyl nalezen",
+    "alias-was-edited": "$sender, alias !$alias je nyni pro !$command",
+    "alias-was-added": "$sender, alias !$alias pro !$command byl pridan",
+    "list-is-not-empty": "$sender, seznam aliasu: $list",
+    "list-is-empty": "$sender, seznam aliasu je prazdny",
+    "alias-was-enabled": "$sender, alias !$alias byl zapnut",
+    "alias-was-disabled": "$sender, alias !$alias byl vypnut",
+    "alias-was-concealed": "$sender, alias !$alias byl skryt",
+    "alias-was-exposed": "$sender, alias !$alias byl odkryt",
+    "alias-was-removed": "$sender, alias !$alias byl smazan"
+  },
+  "customcmds": {
+    "commands-parse-failed": "{core.command-parse} !commands",
+    "command-was-not-found": "$sender, prikaz !$command nebyl nalezen",
+    "command-was-edited": "$sender, prikaz !$command is changed to '$response'",
+    "command-was-added": "$sender, prikaz !$command byl pridan",
+    "list-is-not-empty": "$sender, seznam prikazu: $list",
+    "list-is-empty": "$sender, seznam prikazu je prazdny",
+    "command-was-enabled": "$sender, prikaz !$command byl zapnut",
+    "command-was-disabled": "$sender, prikaz !$command byl vypnut",
+    "command-was-concealed": "$sender, prikaz !$command byl skryt",
+    "command-was-exposed": "$sender, prikaz !$command byl odkryt",
+    "command-was-removed": "$sender, prikaz !$command byl smazan"
+  },
+  "keywords": {
+    "keywords-parse-failed": "{core.command-parse} !commands",
+    "keyword-was-not-found": "$sender, keyword $keyword nebyl nalezen",
+    "keyword-was-edited": "$sender, keyword $keyword is changed to '$response'",
+    "keyword-was-added": "$sender, keyword $keyword byl pridan",
+    "keyword-already-exist": "$sender, keyword $keyword jiz existuje",
+    "list-is-not-empty": "$sender, seznam prikazu: $list",
+    "list-is-empty": "$sender, seznam prikazu je prazdny",
+    "keyword-was-enabled": "$sender, keyword $keyword byl zapnut",
+    "keyword-was-disabled": "$sender, keyword $keyword byl vypnut",
+    "keyword-was-removed": "$sender, keyword $keyword byl smazan"
+  },
+  "points": {
+    "success": {
+      "set": "$username ma nyni nastaveno $amount $pointsName",
+      "give": "$sender prave dal svych $amount $pointsName uzivateli $username",
+      "all": "Vsichni online uzivatele prave ziskali $amount $pointsName!",
+      "rain": "Jen at prsi! Vsichni online uzivatele prave ziskali az $amount $pointsName!",
+      "add": "$username ziskal $amount $pointsName!",
+      "remove": "A jeje, $amount $pointsName bylo odebrano uzivateli $username!"
+    },
+    "failed": {
+      "set": "{core.command-parse} !points set [username] [amount]",
+      "give": "{core.command-parse} !points give [username] [amount]",
+      "giveNotEnough": "Promin, $sender, ale nemas $amount $pointsName abys je daroval uzivateli $username",
+      "get": "{core.command-parse} !points get [username]",
+      "all": "{core.command-parse} !points all [amount]",
+      "rain": "{core.command-parse} !makeitrain [amount]",
+      "add": "{core.command-parse} !points add [username] [amount]",
+      "remove": "{core.command-parse} !points remove [username] [amount]"
+    },
+    "settings": {
+      "pointsName": "Pojmenovani bodu nastaveno na $value format",
+      "pointsResponse": "Odpoved na body nastavena na: $value",
+      "pointsInterval": "Interval ziskavani bodu online je $value minut",
+      "pointsPerInterval": "Pocet bodu ziskano za interval online je $value",
+      "pointsMessageInterval": "Interval zprav pro ziskani bodu je $value",
+      "pointsPerMessageInterval": "Pocet bodu ziskanych za interval zprav je $value",
+      "pointsIntervalOffline": "Interval ziskavani bodu offline je $value minut",
+      "pointsPerIntervalOffline": "Pocet bodu ziskano za interval offline je $value"
+    },
+    "defaults": {
+      "pointsName": {
+        "single": "bod",
+        "multi": "bodu",
+        "xmulti": "4:body"
+      },
+      "pointsResponse": "$username ma prave $amount $pointsName"
+    }
+  },
+  "songs": {
+    "not-playing": "Nic nehraje",
+    "song-was-banned": "Pisen $name byla zabanovana a nebude uz nikdy hrat!",
+    "song-was-banned-timeout-message": "Dostal si timeout za zabanovanou pisen",
+    "song-was-unbanned": "Pisen byla uspesne odbanovana",
+    "song-was-not-banned": "Tato pisen nebyla zabanovana",
+    "no-song-is-currently-playing": "Nic momentalne nehraje",
+    "current-song-from-playlist": "Prave hrajici pisen je $name z playlistu",
+    "current-song-from-songrequest": "Prave hrajici pisen je $name pridana uzivatelem $username",
+    "song-is-banned": "Promin, $sender, ale tahle pisen je zabanovana",
+    "song-was-not-found": "Promin, $sender, ale tahle pisen nebyla nalezena",
+    "song-is-too-long": "Promin, $sender, ale tahle pisen je moc dlouha",
+    "song-was-added-to-queue": "$sender, pisen $name byla pridana do queue",
+    "song-was-added-to-playlist": "$sender, pisen $name byla pridana do playlistu",
+    "song-is-already-in-playlist": "$sender, pisen $name je jiz v playlistu",
+    "song-was-removed-from-playlist": "$sender, pisen $name byla odstranena z playlistu",
+    "song-was-removed-from-queue": "$sender, tva pisen $name byla odstranena z queue"
+  },
+  "price": {
+    "price-parse-failed": "{core.command-parse} !price",
+    "price-was-set": "$sender, cena za $command byla nastavena na $amount $pointsName",
+    "price-was-unset": "$sender, cena za $command byla zrusena",
+    "price-not-found": "$sender, cena za $command nebyla nalezena",
+    "price-was-enabled": "$sender, cena za $command byla zapnuta",
+    "price-was-disabled": "$sender, cena za $command byla vypnuta",
+    "user-have-not-enough-points": "Promin, $sender, ale nemas $amount $pointsName k pouziti $command",
+    "list-is-empty": "$sender, nejsou nastaveny zadne ceny",
+    "list-is-not-empty": "$sender, seznam cen: $list"
+  },
+  "ranks": {
+    "rank-parse-failed": "{core.command-parse} !rank help",
+    "rank-was-added": "$sender, novy $rank($hoursh) byl pridan",
+    "rank-was-edited": "$sender, rank pro $hoursh byl zmenen na $rank",
+    "rank-was-removed": "$sender, rank pro $hoursh byl smazan",
+    "rank-already-exist": "$sender,rank pro $hoursh uz existuje",
+    "rank-was-not-found": "$sender, rank pro $hoursh nebyl nalezen",
+    "custom-rank-was-set-to-user": "$sender, nastavil si rank $rank uzivateli $username",
+    "custom-rank-was-unset-for-user": "$sender, $username byl odebran vlastni rank",
+    "list-is-empty": "$sender, nebyly nalezeny zadne ranky",
+    "list-is-not-empty": "$sender, seznam ranku: $list",
+    "show-rank-without-next-rank": "$sender, tvuj soucasny rank je $rank",
+    "show-rank-with-next-rank": "$sender, tvuj soucasny rank je $rank. Dalsi rank - $nextrank",
+    "user-dont-have-rank": "$sender, jeste nemas prirazeny zadny rank"
+  },
+  "followage": {
+    "success": {
+      "never": "$sender, $username neni followerem kanalu",
+      "time": "$sender, $username sleduje tento kanal jiz $diff"
+    }
+  },
+  "subage": {
+    "success": {
+      "never": "$sender, $username neni subscriberem kanalu",
+      "time": "$sender, $username je subscriberem tohoto kanalu jiz $diff"
+    }
+  },
+  "age": {
+    "failed": "$sender, nemam zatim data o stari uctu $username",
+    "success": {
+      "withUsername": "$sender, stari uctu $username je $diff",
+      "withoutUsername": "$sender, stari tveho uctu je $diff"
+    }
+  },
+  "lastseen": {
+    "success": {
+      "online": "$username je prave na kanale online!",
+      "time": "$username byl naposled spatren na tomto kanalu $when"
+    },
+    "failed": {
+      "parse": "{core.command-parse} !lastseen [username]"
+    }
+  },
+  "watched": {
+    "success": {
+      "time": "$username se dival na tento kanal $time hodin"
+    },
+    "failed": {
+      "parse": "{core.command-parse} !watched nebo !watched [username]"
+    }
+  },
+  "top": {
+    "listWatched": "Top $amount (cas sledovani): ",
+    "listTips": "Top $amount (spropitne): ",
+    "listPoints": "Top $amount (body): ",
+    "listMessages": "Top $amount (zpravy): "
+  },
+  "permissions": {
+    "success": {
+      "change": "Prava pro pouziti '$command' byla zmenena"
+    },
+    "failed": {
+      "parse": "Pouziti: !permission viewer|mods|owner|regular|disable [command]",
+      "noCmd": "Promin, $sender, ale tento prikaz neni v botovi evidovan"
+    },
+    "without-permission": "Nemas dostatecne opravneni pro '$command'"
+  },
+  "moderation": {
+    "user-have-link-permit": "Uzivatel $username muze nyni postnout $count $link do chatu",
+    "permit-parse-failed": "{core.command-parse} !permit [username]",
+    "user-is-warned-about-links": "Nejsou povoleny linky, pozadej o !permit [zbyva $count varovani]",
+    "user-is-warned-about-symbols": "Prilisne pouzivani symbolu neni povoleno [zbyva $count varovani]",
+    "user-is-warned-about-long-message": "Tva zprava je prilis dlouha [zbyva $count varovani]",
+    "user-is-warned-about-caps": "Prilisne pouzivani velkych pismen neni povoleno [zbyva $count varovani]",
+    "user-is-warned-about-spam": "Spamovani neni povoleno [zbyva $count varovani]",
+    "user-is-warned-about-color": "Pouzivani /me neni povoleno [zbyva $count varovani]",
+    "user-is-warned-about-emotes": "Zadne spamovani smajlikama! [zbyva $count varovani]",
+    "user-is-warned-about-blacklist": "Zadne zakazane slova [zbyva $count varovani]",
+    "user-have-timeout-for-links": "Nejsou povoleny linky, pozadej o !permit",
+    "user-have-timeout-for-symbols": "Prilisne pouzivani symbolu neni povoleno",
+    "user-have-timeout-for-long-message": "Tva zprava je prilis dlouha",
+    "user-have-timeout-for-caps": "Prilisne pouzivani velkych pismen neni povoleno",
+    "user-have-timeout-for-spam": "Spamovani neni povoleno",
+    "user-have-timeout-for-color": "Pouzivani /me neni povoleno",
+    "user-have-timeout-for-emotes": "Zadne spamovani smajlikama!",
+    "user-have-timeout-for-blacklist": "Zadne zakazane slova"
+  },
+  "queue": {
+    "info": {
+      "closed": "$sender, {queue.close}",
+      "opened": "$sender, {queue.open}"
+    },
+    "join": {
+      "closed": "Promin $sender, ale queue je uzavrena",
+      "opened": "$sender byl pridan do queue!"
+    },
+    "open": "Queue je prave OTEVRENA! Pro pridani do queue zadej !queue join",
+    "close": "Queue je prave zavrena!",
+    "clear": "Queue byla uplne vymazana",
+    "picked": {
+      "single": "Tento uzivatel byl vybran z queue: $users",
+      "multi": "Tito uzivatele byli vybrani z queue: $users",
+      "none": "Zadny uzivatel nebyl nalezen v queue"
+    }
+  },
+  "title": {
+    "current": "$sender, titulek streamu je '$title'.",
+    "change": {
+      "success": "$sender, titulek byl nastaven na: $title",
+      "failed": "$sender, neco se pokazilo. Titulek je stale nastaveny na: $title"
+    }
+  },
+  "game": {
+    "current": "$sender, prave se hraje $game.",
+    "change": {
+      "success": "$sender, hra byl nastavena na: $game",
+      "failed": "$sender, neco se pokazilo. Hra je stale nastavena na: $game"
+    }
+  },
+  "cooldowns": {
+    "cooldown-parse-failed": "{core.command-parse} !cooldown [keyword|!command] [global|user] [seconds] [true/false]",
+    "cooldown-was-set": "$sender, $type cooldown pro $command byl nastaven na $secondss",
+    "cooldown-was-unset": "$sender, $type cooldown pro $command byl zrusen",
+    "cooldown-triggered": "$sender, jeste nemuzes pouzit $command, zbyva jeste $secondss",
+    "cooldown-not-found": "$sender, cooldown pro $command nebyl nalezen",
+    "cooldown-was-enabled": "$sender, cooldown pro $command byl zapnut",
+    "cooldown-was-disabled": "$sender, cooldown pro $command byl vypnut",
+    "cooldown-was-enabled-for-moderators": "$sender, cooldown pro $command je nastaven i pro moderatory",
+    "cooldown-was-disabled-for-moderators": "$sender, cooldown pro $command ignoruje moderatory",
+    "cooldown-was-enabled-for-owners": "$sender, cooldown pro $command je nastaven i pro vlastnika",
+    "cooldown-was-disabled-for-owners": "$sender, cooldown pro $command ignoruje vlastnika"
+  },
+  "timers": {
+    "id-must-be-defined": "$sender, id odpovedi musi byt zadano.",
+    "id-or-name-must-be-defined": "$sender, id odpovedi nebo jmeno timeru musi byt zadano.",
+    "name-must-be-defined": "$sender, jmeno timeru musi byt zadano.",
+    "response-must-be-defined": "$sender, odpoved timeru musi byt zadana.",
+    "cannot-set-messages-and-seconds-0": "$sender, nelze mit nastaveny zpravy a vteriny na 0.",
+    "timer-was-set": "$sender, timer $name byl nastaven na spusteni co $messages zprav a $seconds vterin",
+    "timer-not-found": "$sender, timer (name: $name) nebyl nalezen v databazi. Pro list timeru -> !timers list",
+    "timer-deleted": "$sender, timer $name a jeho odpovedi byly smazany.",
+    "timer-enabled": "$sender, timer (name: $name) byl zapnut.",
+    "timer-disabled": "$sender, timer (name: $name) byl vypnut.",
+    "timers-list": "$sender, seznam timeru: $list",
+    "responses-list": "$sender, seznam pro timer (name: $name)",
+    "response-deleted": "$sender, odpoved (id: $id) byla smazana.",
+    "response-was-added": "$sender, odpoved (id: $id) pro timer (name: $name) byla pridana - '$response'",
+    "response-not-found": "$sender, odpoved (id: $id) nebyla nalezena v databazi.",
+    "response-enabled": "$sender, odpoved (id: $id) byla zapnuta.",
+    "response-disabled": "$sender, odpoved (id: $id) byla vypnuta."
+  },
+  "gambling": {
+    "cooldown": {
+      "duel": "Cooldown pro !duel je nastaven na $values",
+      "fightme": "Cooldown pro !fightme je nastaven na $values",
+      "bypass": {
+        "true": "Herni cooldowny budou ignorovany pro mody/castera",
+        "false": "Herni cooldowny nebudou ignorovany mody/castera"
+      }
+    },
+    "duel": {
+      "minimalBet": "$sender, minimalni sazka pro !duel je nastavena na $value",
+      "lowerThanMinimalBet": "$sender, minimalni sazka pro !duel je $points $pointsName",
+      "duration": "$sender, trvani duelu nastavena na $value minut",
+      "cooldown": "$sender, nemuzes pouzit !duel jeste $cooldown $minutesName.",
+      "joined": "$sender, hodne stesti behem duelu. Vsadil sis na sebe $points $pointsName!",
+      "added": "$sender si mysli, ze je lepsi nez ostatni a zvysuje sazku na $points $pointsName!",
+      "new": "$sender je vas novy vyzyvatel pro duel! Zucastni se take pomoci !duel [points], zbyva ti $minutes $minutesName pro ucast.",
+      "zeroBet": "$sender, nemuzes na sebe vsadit 0 $pointsName",
+      "notEnoughOptions": "$sender, k duelu musis neco vsadit",
+      "notEnoughPoints": "$sender, nemas $points $pointsName pro duel!",
+      "noContestant": "Pouze $winner se odvazil zucastnit duelu! Jeho sazka $points $pointsName mu byla vracena.",
+      "winner": "Gratulace $winner! Je poslednim prezivsim a ziskal $points $pointsName ($probability% se sazkou $tickets $ticketsName)!!"
+    },
+    "roulette": {
+      "trigger": "$sender pokousi svuj osud a stiskl spoust",
+      "alive": "$sender je nazivu! Vubec nic se nestalo.",
+      "dead": "$sender, tvuj mozek se shledal s kulkou, ktera ho rozmaznula po zdi! ",
+      "mod": "$sender je nesika, vubec svou hlavu netrefil!",
+      "broadcaster": "$sender pouzil slepe, buu!",
+      "timeout": "Roulette timeout nastaven na $values"
+    },
+    "seppuku": {
+      "text": "$sender spachal seppuku.",
+      "mod": "$sender se pokusil o seppuku, ale zlomil mec.",
+      "broadcaster": "$sender se pokusil o seppuku, ale ztratil mec.",
+      "timeout": "Seppuku timeout nastaven na $values"
+    },
+    "fightme": {
+      "cannotFightWithYourself": "$sender, nemuzes se porvat sam se sebou!",
+      "cooldown": "$sender, nemuzes pouzit !fightme jeste $cooldown $minutesName.",
+      "timeout": "FightMe! timeout nastaven na $values",
+      "challenge": "(ง'̀-'́)ง $sender se chce s tebou porvat $username! Pokud souhlasis, posli !fightme $sender",
+      "winner": "٩(^ᴗ^)۶ $winner je hrdym vitezem! Kdo je dalsim na rade?",
+      "notEnoughOptions": "$sender, musis vybrat uzivatele k souboji.",
+      "broadcaster": "ψ(｀∇´)ψ $winner je zde bohem. Tento souboj byl rozhodnut jeste nez vubec zacal.",
+      "bothModerators": "$challenger (*-`ω´- )人(*-`ω´- ) $sender, tento souboj bude trvat tisicileti, nez se rozhodne!",
+      "oneModerator": "¯\\_(ツ)_/¯ $winner je pod ochranou. Sorry."
+    },
+    "gamble": {
+      "chanceToWin": "$sender, sance na vyhru v !gamble nastavena na $value%",
+      "zeroBet": "$sender, nemuzes hrat o 0 $pointsName",
+      "minimalBet": "$sender, minimalni sazka pro !gamble je nastavena na $value",
+      "lowerThanMinimalBet": "$sender, minimalni sazka pro !gamble je $points $pointsName",
+      "notEnoughOptions": "$sender, musis hrat o nejake body",
+      "notEnoughPoints": "$sender, nemas $points $pointsName abys o ne hral",
+      "win": "$sender, VYHRALS! Aktualne mas $points $pointsName",
+      "lose": "$sender, PROHRALS! Aktualne mas $points $pointsName"
+    }
+  },
+  "regulars": {
+    "add": {
+      "success": "@$username je od ted pravidelnym navstevnikem kanalu",
+      "undefined": "@$username neexistuje v databazi bota",
+      "empty": "Pouziti: !regular add <username>"
+    },
+    "rm": {
+      "success": "@$username uz neni pravidelnym navstevnikem kanalu",
+      "undefined": "@$username neexistuje v databazi bota",
+      "empty": "Pouziti: !regular remove <username>"
+    }
+  },
+  "merge": {
+    "from-user-not-found": "$sender, uzivatel $fromUsername neexistuje v databazi",
+    "no-from-user-set": "$sender, musi byt zadan uzivatel, ze ktereho se budou brat data",
+    "no-to-user-set": "$sender, musi byt zadan uzivatel, kteremu se predaji data",
+    "user-merged": "$sender, uzivatel $fromUsername byl nakopirovan uzivateli $toUsername"
+  },
+  "highlights": {
+    "saved": {
+      "description": "$sender, highlight byl ulozen pro $hoursh$minutesm$secondss jako `$description`",
+      "no-description": "$sender, highlight byl ulozen pro $hoursh$minutesm$secondss"
+    },
+    "list": {
+      "items": "$sender, seznam ulozenych highlightu pro posledni stream: $items",
+      "empty": "$sender, zande highlighty nebyly ulozeny"
+    },
+    "offline": "$sender, nelze ulozit highlight, stream je offline"
+  },
+  "whisper" : {
+    "settings": {
+      "disableWhisperListener": {
+        "true": "Bot nebude naslouchat prikazum pres whisper",
+        "false": "Bot bude naslouchat prikazum pres whisper"
+      },
+      "disableSettingsWhispers": {
+        "true": "Bot nebude posilat oznameni o zmene nastaveni",
+        "false": "Bot bude posilat oznameni o zmene nastaveni pres whisper"
+      },
+      "disablePermissionWhispers": {
+        "true": "Bot nebude posilat chyby opravneni",
+        "false": "Bot bude posilat chyby opravneni pres whisper"
+      },
+      "disableCooldownWhispers": {
+        "true": "Bot nebude posilat oznameni o cooldownu",
+        "false": "Bot bude posilat oznameni o cooldownu pres whisper"
+      }
+    }
+  },
+  "phillipsHue": {
+    "list": "$sender, Seznam pripojenych Phillips Hue zarovek: "
+  },
+  "time": "Aktualni cas streamera v jeho casove zone je $time",
+  "subs": "$sender, je zde prave $onlineSubCount online subscriberu. Posledni sub/resub byl $lastSubUsername $lastSubAgo",
+  "followers": "$sender, je zde prave $onlineFollowersCount online followeru. Posledni follow byl $lastFollowUsername $lastFollowAgo",
+  "ignore": {
+    "user": {
+      "is": {
+        "not": {
+          "ignored": "$sender, uzivatel $username neni botem ignorovan"
+        },
+        "added": "$sender, uzivatel $username byl pridan do botova ignorelistu",
+        "removed": "$sender, uzivatel $username byl odebran z botova ignorelistu",
+        "ignored": "$sender, uzivatel $username je botem ignorovan"
+      }
+    }
+  },
+  "filters": {
+    "setVariable": "$sender, $variable bylo nastaveno na $value."
+  }
+}
